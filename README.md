@@ -1,6 +1,6 @@
 # A self-organizing multiobjective evolutionary algorithm (SMEA)
 
-An SMEA implementation based on jMetal framework 4.5 and the author's original implementation in Matlab
+An SMEA implementation based on jMetal framework 4.5 and the author's original implementation in Matlab, author Alejandro Santiago
 
 #Publication
 
