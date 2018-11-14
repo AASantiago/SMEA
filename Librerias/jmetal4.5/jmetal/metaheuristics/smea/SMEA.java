@@ -1,4 +1,4 @@
-//  NSGAII.java
+//  SMEA.java
 //
 //  Author:
 //       Alejandro Santiago <aurelio.santiago@upalt.edu.mx>
