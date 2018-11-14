@@ -98,7 +98,7 @@ public class SMEA extends Algorithm {
     crossoverOperator = operators_.get("crossover");
     selectionOperator = operators_.get("selection");
     Solution newSolution;
-    /*
+    
     if(problem_.getNumberOfObjectives()==2)
     {
         populationSize=1*100;
@@ -111,7 +111,7 @@ public class SMEA extends Algorithm {
         grid=new double[7][15][problem_.getNumberOfVariables()];
         gridsoluciones=new Solution[7][15];
         
-    }*/
+    }
     grid=new double[20][10][problem_.getNumberOfVariables()];
     gridsoluciones=new Solution[20][10];
     
@@ -416,7 +416,7 @@ public class SMEA extends Algorithm {
                     win_pos=j;
                 }
             }
-            //ACTUALIZACION DE PESOS
+            //WEIGHT UPDATE
             for(int j=0;j<populationSize;j++)
             {
                 
@@ -429,7 +429,7 @@ public class SMEA extends Algorithm {
               
            }
                                   
-            //CLUSTERING PROCESS (Paso platicado con Bernabé)
+            //CLUSTERING PROCESS 
            permutation = new int[population.size()];
            double pesostemp[][]=new double [population.size()][problem_.getNumberOfVariables()];
            for(int j=0;j<populationSize;j++)
