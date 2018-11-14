@@ -1,10 +1,9 @@
 //  NSGAII.java
 //
 //  Author:
-//       Antonio J. Nebro <antonio@lcc.uma.es>
-//       Juan J. Durillo <durillo@lcc.uma.es>
+//       Alejandro Santiago <aurelio.santiago@upalt.edu.mx>
 //
-//  Copyright (c) 2011 Antonio J. Nebro, Juan J. Durillo
+//  Copyright (c) 2018 Alejandro Santiago
 //
 //  This program is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU Lesser General Public License as published by
@@ -38,13 +37,7 @@ import jmetal.util.comparators.DominanceComparator;
 import jmetal.util.comparators.FitnessComparator;
 
 /** 
- *  Implementation of NSGA-II.
- *  This implementation of NSGA-II makes use of a QualityIndicator object
- *  to obtained the convergence speed of the algorithm. This version is used
- *  in the paper:
- *     A.J. Nebro, J.J. Durillo, C.A. Coello Coello, F. Luna, E. Alba 
- *     "A Study of Convergence Speed in Multi-Objective Metaheuristics." 
- *     To be presented in: PPSN'08. Dortmund. September 2008.
+ *  Implementation of SMEA.
  */
 
 public class SMEA extends Algorithm {
@@ -59,14 +52,9 @@ public class SMEA extends Algorithm {
   public jmetal.qualityIndicator.util.MetricsUtil utils_;
   public SMEA(Problem problem) {
     super (problem) ;
-  } // NSGAII
+  } // SMEA
 
-  /**   
-   * Runs the NSGA-II algorithm.
-   * @return a <code>SolutionSet</code> that is a set of non dominated solutions
-   * as a result of the algorithm execution
-   * @throws JMException 
-   */
+
   public SolutionSet execute() throws JMException, ClassNotFoundException {
     int populationSize;
     int maxEvaluations;
